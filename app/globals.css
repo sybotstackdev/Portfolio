@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Add a custom golden color using CSS variable */
+:root {
+  --bg-color: #000a13;
+  --gold: #FF7518;
+}
+
+/* Use the custom property for background color */
+body {
+  background-color: var(--bg-color);
+}
+
+/* Utility class for golden text color */
+.text-gold {
+  color: var(--gold) !important;
+}
+
+/* 
+  Usage in your JSX/HTML:
+  <span className="text-gold">Golden Text</span>
+*/
+
+/* Example: You can change --bg-color dynamically with JS or prefers-color-scheme */
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #161513;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f9f9f9;
+  }
+}
+*/
